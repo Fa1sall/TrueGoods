@@ -1,3 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap");
 
 @import "tailwindcss";
+
+@theme {
+  /*Fonts*/
+  --font-title: "Playfair Display", "Segoe UI", "Roboto", "sans-serif";
+  --font-title2: "Righteous", "Segoe UI", "Roboto", "sans-serif";
+  --font-title3: "Bitcount", "Segoe UI", "Roboto", "sans-serif";
+
+  --font-body: "DM Sans", "Segoe UI", "Roboto", "sans-serif";
+  --font-body2: "Inter", "Segoe UI", "Roboto", "sans-serif";
+  --font-body3: "Figtree", "Segoe UI", "Roboto", "sans-serif";
+
+  /*Color Palette*/
+  --color-bg: #fefae0;
+  --color-bg-alt: #ffffff;
+
+  --color-primary: #0a400c;
+  --color-secondary: #819067;
+  --color-accent: #b1ab86;
+
+  --color-text: #0a0a0a;
+  --color-text-muted: #819067;
+  --color-border: #b1ab86;
+
+  --color-card: #fefae0;
+  --color-foreground: #0a400c;
+}
