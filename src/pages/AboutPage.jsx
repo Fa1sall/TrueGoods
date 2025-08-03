@@ -24,18 +24,18 @@ const AboutPage = () => {
 
           <p className="mt-4 text-lg leading-relaxed sm:text-xl">
             At True Goods, it's not about more - it's about{" "}
-            <span className="text-primary font-bold">better</span>.
+            <span className="text-primary font-bold">Better</span>.
           </p>
 
           <div className="border-border text-muted-foreground mt-10 border-t pt-6 text-sm">
             <p className="mb-2">
-              <span className="text-text font-medium">Note:</span> This site was
-              built for learning purposes using React. The products and listings
-              are not real.
+              <span className="text-text font-medium">Note:</span> This website
+              was built for learning React & React Router. The products and
+              listings are not real.
             </p>
 
             <a
-              href="https://github.com/Fa1sall"
+              href="https://github.com/Fa1sall/TrueGoods"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary inline-flex items-center gap-2 hover:underline"

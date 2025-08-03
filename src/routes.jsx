@@ -25,7 +25,7 @@ const routes = [
         element: <AboutPage />,
       },
       {
-        path: "shop/product:id",
+        path: "shop/product/:id",
         element: <ProductPage />,
       },
       {

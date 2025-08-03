@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ itemCount }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const handleSidebarToggle = (status) => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-primary bg-bg fixed top-0 z-50 w-full shadow-md">
+    <div className="text-primary bg-bg fixed top-0 z-50 min-h-16 w-full shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-5">
         {/*Mobile Responsive Menu*/}
         <div
@@ -23,7 +23,7 @@ const Navbar = () => {
           <GiHamburgerMenu size={30}></GiHamburgerMenu>
         </div>
         <div
-          className={`bg-bg absolute top-0 left-0 z-60 h-screen w-[300px] transform shadow-xl transition-transform duration-300 ease-in-out sm:hidden ${
+          className={`bg-bg absolute top-0 left-0 z-60 h-screen w-screen transform shadow-xl transition-transform duration-300 ease-in-out sm:hidden ${
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -71,12 +71,17 @@ const Navbar = () => {
         <div className="font-title2 text-primary flex-none text-2xl font-bold sm:text-4xl">
           TrueGoods
         </div>
-        <div className="flex flex-1 items-center justify-end gap-5">
+        <div className="relative flex flex-1 items-center justify-end gap-5">
           <Link
             to="/checkout"
-            className="hover:text-primary/80 cursor-pointer pt-1 transition-all duration-300 ease-in-out"
+            className="hover:text-primary/80 relative cursor-pointer pt-1 transition-all duration-300 ease-in-out"
           >
-            <IoCartOutline size={32} className="cursor-pointer" />
+            <IoCartOutline size={32} />
+            {itemCount > 0 && (
+              <span className="bg-primary absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold text-white ring-2 ring-white">
+                {itemCount}
+              </span>
+            )}
           </Link>
         </div>
       </div>
