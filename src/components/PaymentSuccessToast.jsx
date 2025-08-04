@@ -4,7 +4,7 @@ function PaymentSuccessToast({ closeToast }) {
   return (
     <div
       style={{ backgroundColor: "var(--color-primary)" }}
-      className="flex w-full max-w-xs items-center justify-between gap-4 rounded-lg px-4 py-3 text-white shadow-lg"
+      className="flex w-full max-w-screen items-center justify-between gap-4 rounded-lg px-3 py-2 text-white shadow-lg sm:max-w-sm sm:px-4 sm:py-3"
     >
       <div className="flex items-center gap-3">
         <FaCheckCircle size={22} />
