@@ -25,7 +25,7 @@ const ShopPage = () => {
       setProductsData(data);
       setIsLoading(false);
     });
-    return () => getProducts().then(console.log);
+    //return () => getProducts().then(console.log);
   }, []);
 
   return (

@@ -19,7 +19,7 @@ function App() {
           backgroundColor: "var(--color-primary)",
         },
       });
-      console.log("Added ", newItem);
+      //console.log("Added ", newItem);
     } else {
       toast.error("Item already in cart!", {
         autoClose: 1000,
@@ -34,7 +34,7 @@ function App() {
   const handleRemoveFromCart = (newItemId) => {
     const removedItemCart = cartItems.filter((item) => item.id !== newItemId);
     setCartItems(removedItemCart);
-    console.log("Removed: ", newItemId);
+    //console.log("Removed: ", newItemId);
   };
 
   const handleQuantityChange = (itemId, value) => {
