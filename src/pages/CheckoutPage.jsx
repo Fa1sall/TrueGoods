@@ -47,7 +47,7 @@ const CheckoutPage = () => {
           </Link>
         </div>
       ) : (
-        <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-8 px-4 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-8 px-4 lg:grid-cols-2">
           {/*Cart Card*/}
           <div className="space-y-6 shadow-md">
             <div className="border-border space-y-4 rounded-md border bg-white p-3 sm:p-6">
