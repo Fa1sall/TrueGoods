@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { ToastContainer, toast, Slide } from "react-toastify";
 
 import Navbar from "./components/Navbar";
@@ -72,6 +72,7 @@ function App() {
       <div className="relative z-10">
         <Navbar itemCount={cartItems.length} />
         <div className="pt-20">
+          <ScrollRestoration />
           <Outlet
             context={{
               cartItems,
