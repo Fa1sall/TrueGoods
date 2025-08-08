@@ -60,6 +60,7 @@ const CheckoutPage = () => {
                   return (
                     <OrderProductCard
                       key={item.id}
+                      itemPrice={item.quantity * item.price}
                       {...item}
                       handleRemoveFromCart={handleRemoveFromCart}
                       handleQuantityChange={handleQuantityChange}

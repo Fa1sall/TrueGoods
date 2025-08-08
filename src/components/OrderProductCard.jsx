@@ -76,7 +76,7 @@ const OrderProductCard = (props) => {
 
       <div className="flex flex-col items-end justify-between gap-2 max-sm:gap-1 max-sm:text-sm">
         <div className="text-md font-bold text-black max-sm:text-base">
-          ${props.price}
+          ${parseFloat(props.itemPrice).toFixed(2)}
         </div>
 
         <button
