@@ -3,7 +3,7 @@ import shoppingImg from "../assets/images/shopping-bag.jpg";
 
 const AboutPage = () => {
   return (
-    <div className="bg-bg text-text min-h-screen px-6 py-10">
+    <div className="text-text min-h-screen px-6 py-10">
       <div className="mx-auto flex max-w-5xl flex-col-reverse items-center gap-10 lg:flex-row">
         <div className="flex-1 text-center lg:text-left">
           <h1 className="font-title2 text-primary text-4xl font-bold sm:text-5xl">
